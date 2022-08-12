@@ -1,74 +1,45 @@
-# tailless
+# Tailless
 
 A classless styling solution based on top of Tailwind CSS.
 
-Inspired by classless CSS frameworks like Pico, which directly style semantic HTML
-elements with little or no classes, tailless applies styles to your semantic HTML
-elements using Tailwind CSS.
+Inspired by classless CSS frameworks like [Pico](https://picocss.com/), which
+directly style semantic HTML elements with little or no classes, Tailless
+applies styles to your semantic HTML elements, but using [Tailwind CSS](https://tailwindcss.com) instead of
+vanilla CSS.
 
 The initial look is inspired by the sample "Brutalist" component design on the
-Tailwind CSS homepage.
+Tailwind CSS homepage. You can check out a demo in the public directory, which
+is based on a 'kitchen sink'-type [Pico CSS classless example](https://picocss.com/examples/classless/).
 
-# Usage
+**Note:** *This is still WIP, so some elements may not appear styled correctly.*
 
-You need Tailwind CSS installed.
+## Pre-requisites 
 
-Eventually, this will be an installable package, from which you can import the theme
-you need, but for the time being, paste the indicated code into your global CSS file
-which has the `@tailwind` imports:
+You need Tailwind CSS installed. The project can be anything from vanilla
+HTML/JS to React or Next.js. As long as TailwindCSS is set up, things should
+work just fine.
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+This was built using with Tailwind CSS 3.1.x.
 
-/* add the following */
-@layer base {
-  body {
-    @apply font-mono;
-  }
+## Usage
 
-  header,
-  main,
-  footer {
-    @apply p-6;
-  }
-  header {
-    @apply bg-black;
-  }
-  header > hgroup > h1 {
-    @apply text-3xl font-semibold text-white;
-  }
-  header > hgroup > h2 {
-    @apply text-xl text-gray-400;
-  }
-  header > nav > ul {
-    @apply flex my-3;
-  }
-  header > nav > ul > li {
-    @apply text-teal-400 mr-3;
-  }
-  header > nav > ul > li.current {
-    @apply text-white uppercase;
-  }
-  header > hgroup,
-  header > nav,
-  main > section,
-  footer > small {
-    @apply container mx-auto;
-  }
+You can import any one of the `tailless-*.css` from the `src` folder into your
+main/global CSS file, after the initial `@tailwind` imports.
 
-  main > section > h2 {
-    @apply text-2xl font-semibold;
-  }
-}
+## Themes
 
-```
+Each file implementes a different theme. The initial styles are inspired by the
+examples on the TailwindCSS homepage:
 
-# Contributing
+- Simple
+- Playful
+- Elegant
+- Brutalist
 
-Contributions welcome! Please open a pull request.
+## Contributing
 
-# License
+Contributions welcome! Make a new theme! Tweak an existing one! Please open a pull request.
 
-MIT
+## License
+
+MIT License

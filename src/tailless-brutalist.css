@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-mono;
+  }
+
+  header,
+  main,
+  footer {
+    @apply p-6;
+  }
+  header {
+    @apply bg-black;
+  }
+  header > hgroup > h1 {
+    @apply text-3xl font-semibold text-white;
+  }
+  header > hgroup > h2 {
+    @apply text-xl text-gray-400;
+  }
+  header > nav > ul {
+    @apply flex my-3;
+  }
+  header > nav > ul > li {
+    @apply text-teal-400 mr-3;
+  }
+  header > nav > ul > li.current {
+    @apply text-white uppercase;
+  }
+  header,
+  main,
+  footer {
+    @apply container mx-auto;
+  }
+
+  main > section > h2 {
+    @apply text-2xl font-semibold;
+  }
+}

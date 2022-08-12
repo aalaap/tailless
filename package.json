@@ -1,0 +1,19 @@
+{
+  "name": "tailless2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw": "npx tailwindcss -i ./src/tailless-brutalist.css -o ./public/tailless-brutalist.css",
+    "dev": "npm run tw -- --watch",
+    "build": "NODE_ENV=production npm run tw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "tailwindcss": "^3.1.8"
+  }
+}
