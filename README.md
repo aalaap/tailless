@@ -8,7 +8,7 @@ applies styles to your semantic HTML elements, but using [Tailwind CSS](https://
 vanilla CSS.
 
 The initial look is inspired by the sample "Brutalist" component design on the
-Tailwind CSS homepage. You can check out a demo in the public directory, which
+Tailwind CSS homepage. You can check out a demo in the `docs` directory, which
 is based on a 'kitchen sink'-type [Pico CSS classless example](https://picocss.com/examples/classless/).
 
 **Note:** *This is still WIP, so some elements may not appear styled correctly.*
